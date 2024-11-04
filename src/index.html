@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batch Audio Converter</title>
+</head>
+<body class="bg-gray-900 min-h-screen p-8">
+    <!-- Batch Controls -->
+    <div id="batchControls" class="batch-controls mb-6 hidden">
+        <div class="flex gap-4">
+            <button id="batchMp3" class="btn btn-secondary">Convert All to MP3</button>
+            <button id="batchWav" class="btn btn-tertiary">Convert All to WAV</button>
+        </div>
+    </div>
+
+    <!-- Drop Zone -->
+    <div id="dropZone" class="drop-zone">
+        <div class="text-gray-400">Drop album folders here</div>
+    </div>
+
+    <!-- Album Grid -->
+    <div id="albumGrid" class="album-grid"></div>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html> 

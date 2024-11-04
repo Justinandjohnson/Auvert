@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Converter Suite</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="bg-gray-900 min-h-screen flex flex-col items-center justify-center p-8">
+    <div class="container max-w-3xl mx-auto">
+        <header class="text-center mb-12">
+            <div class="mb-8">
+                <h1 class="text-6xl font-bold bg-gradient-to-r from-purple-500 via-blue-500 to-green-500 text-transparent bg-clip-text">
+                    Auvert
+                </h1>
+                <p class="text-gray-400 mt-2 text-lg">Audio Conversion Suite</p>
+            </div>
+
+            <div class="text-6xl mb-6">🎵</div>
+            <h2 class="text-xl text-gray-200 mb-4">Convert MP3 and WAV files to MP4s using existing album artwork</h2>
+        </header>
+        
+        <!-- Batch Controls -->
+        <div id="batchControls" class="batch-controls mb-6 hidden">
+            <div class="flex gap-4 justify-center">
+                <button id="batchMp3" class="btn btn-secondary w-1/2">Convert All to MP3</button>
+                <button id="batchWav" class="btn btn-tertiary w-1/2">Convert All to WAV</button>
+            </div>
+        </div>
+        
+        <div id="dropZone" class="drop-zone">
+            <div class="text-center">
+                <div class="upload-icon mb-4">⬆️</div>
+                <p class="text-xl text-gray-200 font-medium mb-2">Drag & drop your MP3 or WAV files here</p>
+                <p class="text-sm text-gray-400">or click to select files</p>
+            </div>
+        </div>
+
+        <div id="albumGrid" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+
+        <footer class="text-center mt-12">
+            <p class="text-gray-400">Powered by AI • Made with ❤️</p>
+        </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
