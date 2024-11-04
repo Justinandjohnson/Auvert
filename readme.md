@@ -37,7 +37,7 @@ Getting started is super simple! Just make sure you have Node.js installed, then
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/yourusername/auvert.git
+   git clone https://github.com/Justinandjohnson/Auvert
    cd auvert
    ```
 
